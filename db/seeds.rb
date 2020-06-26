@@ -7,3 +7,11 @@ puts 'Creating 5 products...'
   puts "#{i + 1}. #{product.name}"
 end
 puts 'Finished!'
+
+puts 'Creating user...'
+User.create!(
+  email: "user@user.com",
+  first_name: "John",
+  last_name: "Doe",
+  password: 123456
+)
